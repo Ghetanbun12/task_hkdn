@@ -1,0 +1,100 @@
+
+ .container-form {
+  margin-top: 10vh;
+
+} 
+
+ .logo-form { 
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vh;
+ }
+ .login-form{
+  display: flex;
+  justify-content: center;
+ }
+.logo-img {
+  width: 160px;
+  object-fit: contain;
+}
+.logo-text span {
+    max-width:80px;
+
+}
+.text1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;              /* xám sáng */
+  text-shadow: 
+    1px 1px 0 #000000,
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000;       /* tạo outline màu trắng */
+  letter-spacing: 2px;
+}
+
+/* Medi@ – màu đen + chữ M to */
+.text2 {
+  font-size: 25px;
+  font-weight: 900;
+  color: #000;
+}
+/* Form Box */
+.login-form {
+  /* width: 100vh; */
+  background: transparent;
+}
+
+/* Label */
+.ant-form-item-label > label {
+  font-weight: 100;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Input - FIX: Thêm ant-input-affix-wrapper để Input.Password có cùng width */
+.ant-input {
+  width: 60vh;
+  height: 6vh;
+  border-radius: 6px;
+}
+.ant-input-affix-wrapper {
+    width: 60vh;
+    height: 6vh;
+}
+
+/* Quên mật khẩu */
+.forgot-password {
+  width: 60vh;
+  margin-top: 10px;     /* đưa sát input */
+  margin-bottom: 10px;
+  color: #e86a1a;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: left;
+}
+.ant-form-item-explain-error{
+    width: 60vh;
+    text-align: left;
+    margin-top: 10px;
+}
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Nút đăng nhập */
+.login-btn {
+  width: 25vh;
+  background-color: #e86a1a !important;
+  border: none !important;
+  height: 38px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.login-form-btn{
+  display: flex;
+  justify-content: center;
+}
+.login-btn:hover {
+  background-color: #d45d10 !important;
+}

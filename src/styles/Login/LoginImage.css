@@ -1,0 +1,32 @@
+.login-image-container{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100vh;
+    height: 90vh;
+    padding-top: 10vh;
+    padding-left: 15vh;
+}
+
+.login-image{
+    width: 90%;
+    height: 80%;
+    object-fit: cover;
+    display: flex;
+}
+.login-title{
+    position: absolute;;
+    left: 65vh;
+    top: 38vh;
+}
+.login-title .title-one{
+    color:#FF7506 ;
+    font-size: 35px;
+    text-align: left;
+}
+.login-title .title-two{
+    color: #FF7506;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: left;
+}

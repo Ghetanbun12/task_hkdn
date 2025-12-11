@@ -1,0 +1,35 @@
+.logo-form { 
+  margin-bottom: 15vh;
+  display: block ;
+  text-align: center;
+ }
+.logo-img {
+  width: 160px;
+  object-fit: contain;
+}
+.logo-text span {
+    max-width:80px;
+
+}
+/* .logo-text{
+   position: relative;
+   top: 16vh;
+} */
+.text1 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #ffffff;              /* xám sáng */
+  text-shadow: 
+    1px 1px 0 #000000,
+    -1px -1px 0 #000000,
+    1px -1px 0 #000000,
+    -1px 1px 0 #000000;       /* tạo outline màu trắng */
+  letter-spacing: 2px;
+}
+
+/* Medi@ – màu đen + chữ M to */
+.text2 {
+  font-size: 25px;
+  font-weight: 900;
+  color: #000;
+}

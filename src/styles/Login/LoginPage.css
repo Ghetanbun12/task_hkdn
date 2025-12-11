@@ -1,0 +1,27 @@
+
+.login-container{
+    display: flex;
+    flex-direction: row;
+}
+.logo-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-form{
+    flex: 4;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login-image{
+    flex: 6;
+}
+.resetpassword-form{
+    flex: 4;
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

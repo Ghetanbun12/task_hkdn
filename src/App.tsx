@@ -1,24 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import LoginForm from "./components/Login/LoginForm";
+import ResetPassword from "./components/Login/ResetPassowrd";
+import ConfirmPassword from "./components/Login/ConfirmPassword";
+import LoginImage from "./components/Login/LoginImage";
+import LoginImageTwo from "./components/Login/LoginImageTwo";
+import "./App.css";
 
 function App() {
+  const [page, setPage] = useState("login");
+
+  const renderPage = () => {
+    switch (page) {
+      case "login":
+        return <LoginForm onForgot={() => setPage("reset")} />;
+      case "reset":
+        return <ResetPassword onContinue={() => setPage("confirm")} onCancel={() => setPage("login")} />;
+      case "confirm":
+        return <ConfirmPassword onDone={() => setPage("login")} />;
+      default:
+        return <LoginForm onForgot={() => setPage("reset")} />;
+    }
+  };
+
+  const renderImage = () => {
+    if (page === "login") return <LoginImage />;
+    return <LoginImageTwo />;
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="login-container">
+      <div className="login-form">
+        {renderPage()}
+      </div>
+      <div className="login-image">
+        {renderImage()}
+      </div>
     </div>
   );
 }
