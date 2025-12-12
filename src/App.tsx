@@ -5,6 +5,7 @@ import ConfirmPassword from "./components/Login/ConfirmPassword";
 import LoginImage from "./components/Login/LoginImage";
 import LoginImageTwo from "./components/Login/LoginImageTwo";
 import "./App.css";
+import ServiceManagement from "./components/serviceManage/Manage.Service";
 
 function App() {
   const [page, setPage] = useState("login");
@@ -28,13 +29,16 @@ function App() {
   };
 
   return (
-    <div className="login-container">
-      <div className="login-form">
-        {renderPage()}
-      </div>
-      <div className="login-image">
-        {renderImage()}
-      </div>
+    // <div className="login-container">
+    //   <div className="login-form">
+    //     {renderPage()}
+    //   </div>
+    //   <div className="login-image">
+    //     {renderImage()}
+    //   </div>
+    // </div>
+    <div>
+        <ServiceManagement/>
     </div>
   );
 }

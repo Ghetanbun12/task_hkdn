@@ -1,0 +1,6 @@
+{
+  "devices": [
+    { "id": 1, "code": "DV_01", "name": "Khám tổng quát", "description": "Dịch vụ khám toàn diện", "status": "active" },
+    { "id": 2, "code": "DV_02", "name": "Xét nghiệm máu", "description": "Kiểm tra máu tổng quát", "status": "inactive" }
+  ]
+}
