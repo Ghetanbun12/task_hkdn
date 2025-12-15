@@ -2,17 +2,11 @@ import React from 'react';
 import { Table, Button, Input, Select, DatePicker, Tag, Space, Breadcrumb } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import type { ColumnsType } from 'antd/es/table';
-
+import { DeviceData } from '../../store/deviceSlice';
 const { Option } = Select;
 const { RangePicker } = DatePicker;
 
-interface DeviceData {
-  key: number;
-  code: string;
-  name: string;
-  description: string;
-  status: 'active' | 'inactive';
-}
+
 
 interface DeviceDetailData {
   key: number;

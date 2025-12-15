@@ -5,7 +5,7 @@ import ConfirmPassword from "./components/Login/ConfirmPassword";
 import LoginImage from "./components/Login/LoginImage";
 import LoginImageTwo from "./components/Login/LoginImageTwo";
 import "./App.css";
-import ServiceManagement from "./components/serviceManage/Manage.Service";
+import ServiceManagement from "./page/Manage.Service";
 
 function App() {
   const [page, setPage] = useState("login");

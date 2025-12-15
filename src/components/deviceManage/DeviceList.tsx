@@ -3,15 +3,21 @@ import { Table, Button, Input, Select, DatePicker, Tag, Space } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
 import type { ColumnsType } from 'antd/es/table';
 import { useAppDispatch, useAppSelector } from '../../store/hook'; // sửa tên file hooks
-import { fetchDevices } from '../../store/deviceSlice';
+import { fetchDevices, DeviceData } from '../../store/deviceSlice';
 
-interface DeviceData {
-  key: number;
-  code: string;
-  name: string;
-  description: string;
-  status: 'active' | 'inactive';
-}
+// export interface DeviceData {
+//   key: number;
+//   code: string;
+//   name: string;
+//   ipAddress: string;
+//   username: string;
+//   password: string;
+//   deviceType: string;
+//   serviceUsed: string;
+//   status: 'active' | 'inactive';
+//   description?: string;
+//   connectionStatus: 'active' | 'inactive'; 
+// }
 
 interface DeviceListProps {
   onViewDetail: (record: DeviceData) => void;
@@ -29,11 +35,11 @@ const DeviceList: React.FC<DeviceListProps> = ({ onViewDetail, onEdit, onCreateN
   }, [dispatch]);
 
   const listColumns: ColumnsType<DeviceData> = [
-    { title: 'Mã dịch vụ', dataIndex: 'code', key: 'code' },
-    { title: 'Tên dịch vụ', dataIndex: 'name', key: 'name' },
-    { title: 'Mô tả', dataIndex: 'description', key: 'description' },
+    { title: 'Mã Thiết bị', dataIndex: 'code', key: 'code' },
+    { title: 'Tên Thiết bị', dataIndex: 'name', key: 'name' },
+    { title: 'Địa chỉ IP', dataIndex: 'ipAddress', key: 'ipAddress' },
     {
-      title: 'Trạng thái',
+      title: 'Trạng thái hoạt động',
       dataIndex: 'status',
       key: 'status',
       render: (status: DeviceData['status']) => (
@@ -42,6 +48,17 @@ const DeviceList: React.FC<DeviceListProps> = ({ onViewDetail, onEdit, onCreateN
         </Tag>
       ),
     },
+    {
+      title: 'Trạng thái Kết nối',
+      dataIndex: 'connectionStatus',
+      key: 'connectionStatus',
+      render: (status: DeviceData['connectionStatus']) => (
+        <Tag color={status === 'active' ? 'success' : 'error'}>
+          {status === 'active' ? 'Kết nối' : 'Mất kết nối'}
+        </Tag>
+      ),
+    },
+    {key: 'serviceUsed', title: 'Dịch vụ sử dụng', dataIndex: 'serviceUsed'},
     {
       title: '',
       key: 'actions',

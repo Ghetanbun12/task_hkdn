@@ -1,13 +1,6 @@
 import React from 'react';
 import { Button, Input, Space, Checkbox, Breadcrumb } from 'antd';
-
-interface DeviceData {
-  key: number;
-  code: string;
-  name: string;
-  description: string;
-  status: 'active' | 'inactive';
-}
+import type { DeviceData } from '../../store/deviceSlice';
 
 interface DeviceFormProps {
   selectedDevice: DeviceData | null;

@@ -5,8 +5,14 @@ export interface DeviceData {
   key: number;
   code: string;
   name: string;
-  description: string;
-  status: "active" | "inactive";
+  ipAddress: string;
+  username: string;
+  password: string;
+  deviceType: string;
+  serviceUsed: string;
+  status: 'active' | 'inactive';
+  description?: string;
+  connectionStatus: 'active' | 'inactive'; 
 }
 
 interface DeviceState {
