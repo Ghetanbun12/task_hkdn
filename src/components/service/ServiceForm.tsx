@@ -11,13 +11,6 @@ interface DeviceFormProps {
 const DeviceForm: React.FC<DeviceFormProps> = ({selectedDevice, onBack, onSubmit }) => {
   return (
     <>
-      <Breadcrumb className="breadcrumb">
-        <Breadcrumb.Item>Dịch vụ</Breadcrumb.Item>
-        <Breadcrumb.Item onClick={onBack} className="breadcrumb-link">Danh sách dịch vụ</Breadcrumb.Item>
-        <Breadcrumb.Item className="breadcrumb-active">
-          {selectedDevice ? 'Cập nhật' : 'Thêm mới'}
-        </Breadcrumb.Item>
-      </Breadcrumb>
       
       <h2 className="page-title">Quản lý dịch vụ</h2>
       

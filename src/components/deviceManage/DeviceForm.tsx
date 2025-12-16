@@ -61,7 +61,7 @@ const DeviceForm: React.FC<DeviceFormProps> = ({ selectedDevice, onBack, onSubmi
   {/* FULL ROW */}
   <div className="form-item form-item-full">
     <div className="form-label" >Dịch vụ sử dụng <span className="required">*</span></div>
-    <Input style={{ width: '165vh' }} />
+    <Input  />
   </div>
 
 </div>

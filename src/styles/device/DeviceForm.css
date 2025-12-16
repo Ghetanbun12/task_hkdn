@@ -4,7 +4,9 @@
   border-radius: 16px;
   padding: 24px;
   margin-top: 16px;
+  width: 100%;
 }
+
 
 /* ===== TITLES ===== */
 .page-title {
@@ -46,17 +48,17 @@
 /* ===== INPUT & SELECT HEIGHT ===== */
 .form-item input,
 .form-item .ant-input-password,
+.form-item .ant-select,
 .form-item .ant-select-selector {
+  width: 100%;          /* ✅ tất cả bằng nhau */
   height: 44px;
   border-radius: 8px;
-  width: 80vh;
-  display: flex;
-  align-items: center;
 }
 
 /* Fix select height */
 .ant-select-single .ant-select-selector {
-  height: 44px !important;
+   height: 44px !important;
+  display: flex;
   align-items: center;
 }
 

@@ -1,0 +1,303 @@
+/* Dashboard Container */
+.dashboard-container {
+  padding: 24px;
+  background: #F6F6F6;
+  min-height: 100vh;
+}
+
+.dashboard-title {
+  color: #FF7506;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* Stat Cards */
+.stat-card {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.stat-card .ant-card-body {
+  padding: 12px 16px;
+}
+
+.stat-card-body {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.stat-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-icon-wrapper .anticon {
+  color: #fff;
+  font-size: 24px;
+}
+
+.stat-content {
+  flex: 1;
+}
+
+.stat-title {
+  font-size: 14px;
+  color: #535261;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #535261;
+  line-height: 1;
+}
+
+.stat-footer {
+  padding-top: 8px;
+  border-top: 1px solid #F1F1F5;
+}
+
+.stat-change {
+  font-size: 12px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+/* Chart Card */
+.chart-card {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.chart-card .ant-card-head {
+  border-bottom: 1px solid #F1F1F5;
+  padding: 16px 20px;
+}
+
+.chart-card .ant-card-body {
+  padding: 20px;
+}
+
+/* Overview Card */
+.overview-card {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.overview-card .ant-card-head {
+  border-bottom: 1px solid #F1F1F5;
+  padding: 16px 20px;
+}
+
+.overview-card .ant-card-body {
+  padding: 20px;
+}
+
+.overview-item {
+  margin-bottom: 16px;
+}
+
+.overview-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.progress-wrapper {
+  flex-shrink: 0;
+}
+
+.overview-main {
+  flex: 1;
+}
+
+.overview-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: #535261;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.overview-label {
+  font-size: 14px;
+  color: #535261;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.label-icon {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.overview-details {
+  margin-left: 76px;
+}
+
+.overview-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.detail-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.detail-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.detail-text {
+  font-size: 14px;
+  color: #535261;
+}
+
+.detail-value {
+  font-size: 14px;
+  font-weight: 700;
+  color: #535261;
+}
+
+.overview-divider {
+  height: 1px;
+  background: #F1F1F5;
+  margin: 16px 0;
+}
+
+/* Calendar */
+.calendar-section {
+  margin-top: 20px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.calendar-nav {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #FF7506;
+  cursor: pointer;
+  padding: 0 8px;
+  font-weight: 700;
+}
+
+.calendar-nav:hover {
+  opacity: 0.7;
+}
+
+.calendar-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FF7506;
+}
+
+.calendar-body {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.calendar-weekday {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: #FF7506;
+  padding: 4px 0;
+}
+
+.calendar-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.calendar-day {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #535261;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.calendar-day:hover {
+  background: #FFF2E7;
+}
+
+.calendar-day.other-month {
+  color: #D4D4D7;
+}
+
+.calendar-day.selected {
+  background: #FF7506;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .overview-details {
+    margin-left: 0;
+    margin-top: 12px;
+  }
+  
+  .overview-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .dashboard-container {
+    padding: 16px;
+  }
+  
+  .stat-value {
+    font-size: 24px;
+  }
+  
+  .overview-value {
+    font-size: 24px;
+  }
+}
